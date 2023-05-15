@@ -9,18 +9,19 @@ The library is implemented in TypeScript and provides a clean, chainable API for
 - Add new chains
 - Consolidate chains based on common elements
 - Use chainable methods for readability and expressiveness
+- Can be used with elements of any data type (examples use string)
 
 ## API Methods
 
-### set(element: string)
+### set(element: any)
 
 This method begins a new chain with a specified element. It returns an object with methods for defining the ranking of the element.
 
-- `above(otherElement: string)`: This method adds the otherElement below the current element in the chain.
-- `below(otherElement: string)`: This method adds the otherElement above the current element in the chain.
-- `between(otherElement1: string)`: This method begins the definition of a range for the current element. It returns an object with an `and(otherElement2: string)` method, which completes the range and adds the current element between otherElement1 and otherElement2 in the chain.
+- `above(otherElement: any)`: This method adds the otherElement below the current element in the chain.
+- `below(otherElement: any)`: This method adds the otherElement above the current element in the chain.
+- `between(otherElement1: any)`: This method begins the definition of a range for the current element. It returns an object with an `and(otherElement2: any)` method, which completes the range and adds the current element between otherElement1 and otherElement2 in the chain.
 
-### add(...args: string[])
+### add(...args: any[])
 
 This method adds a new chain to the list. The order of the elements in the chain is defined by the order of the arguments.
 
