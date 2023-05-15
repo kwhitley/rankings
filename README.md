@@ -25,6 +25,20 @@ This method begins a new chain with a specified element. It returns an object wi
 
 This method adds a new chain to the list. The order of the elements in the chain is defined by the order of the arguments.
 
+### .chains
+
+This attribute lists the current chains.
+```js
+// Example:
+console.log(rankings.chains)
+
+// Output:
+[
+  ['a', 'b', 'c'],
+  ['j', 'z'],
+]
+```
+
 ## Usage
 
 ```javascript
